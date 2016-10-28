@@ -1,0 +1,44 @@
+#!/bin/bash
+# Building options. Set libraries that has to be downloaded and/or built
+download_kf5="yes"
+build_kf5="yes"
+build_cfitsio="yes"
+build_nova="yes"
+download_indi="no"
+build_indi="yes"
+build_libraw="yes"
+
+# Where KF5 for Android will be downloaded to
+kf5_android_path="/home/jasem/Projects/development/KF5_Android/"
+
+# Download Qt for Android and install it
+qt_android_libs="/opt/Qt5.7.0/5.7/android_armv7/"
+
+# arm/arm64 or x86/x86_64 or mips/mips64
+android_architecture="arm" 
+
+#"Your path to Android NDK folder"
+android_ndk="/home/jasem/Projects/android/android-ndk-r13/" 
+
+#"Your path to Android SDK folder"
+android_sdk_root="/home/jasem/Projects/android/android-sdk-linux/" 
+
+android_api_level="15"
+ 
+#"path to your ant installation (/usr/bin/ant on Ubuntu)"
+ant= "/usr/bin/ant" 
+
+#"path to your JDK (choose from the folders at /usr/lib/jvm/ on Ubuntu)"
+java_home="/usr/lib/jvm/java-8-openjdk-amd64/" 
+
+#"KStars source directory". 
+kstars_DIR="/home/jasem/Projects/kstars/" 
+
+#"Your building directory (build and export directories will be created there)"
+build_dir="/home/jasem/Projects/build/kstarslite-build/Android/Release/${android_architecture}" 
+
+#"Path to KF5Config cmake files e.g. /usr/lib/x86_64-linux-gnu/cmake/"
+kf5_host_tooling="/usr/lib/x86_64-linux-gnu/cmake/" 
+
+# Set INDI source location (location of libindi with CMakeLists.txt in it). If you do not have libindi, set build_indi above to "yes" and it will get downloaded
+indi_location="/home/jasem/Projects/indi/libindi" 

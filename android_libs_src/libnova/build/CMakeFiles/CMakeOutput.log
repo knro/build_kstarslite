@@ -1,0 +1,548 @@
+The target system is: Android - 1 - 
+The host system is: Linux - 4.4.0-43-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc 
+Build flags: 
+Id flags: -c
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/3.5.1/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++ 
+Build flags: 
+Id flags: -c
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/3.5.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_516b3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_516b3.dir/build.make CMakeFiles/cmTC_516b3.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_516b3.dir/testCCompiler.c.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include   -o CMakeFiles/cmTC_516b3.dir/testCCompiler.c.o   -c /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_516b3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_516b3.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm    /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc  CMakeFiles/cmTC_516b3.dir/testCCompiler.c.o  -o cmTC_516b3  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a  
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_186c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_186c7.dir/build.make CMakeFiles/cmTC_186c7.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_186c7.dir/CMakeCCompilerABI.c.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include   -o CMakeFiles/cmTC_186c7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_186c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_186c7.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm    /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc -v CMakeFiles/cmTC_186c7.dir/CMakeCCompilerABI.c.o  -o cmTC_186c7  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a   
+Using built-in specs.
+COLLECT_GCC=/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc
+COLLECT_LTO_WRAPPER=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper
+Target: arm-linux-androideabi
+Configured with: /usr/local/google/buildbot/src/android/gcc/toolchain/build/../gcc/gcc-4.9/configure --prefix=/tmp/59719db9ae19ff43aef46bbcb79596b6 --target=arm-linux-androideabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/buildbot/tmp/build/toolchain/temp-install --with-mpfr=/buildbot/tmp/build/toolchain/temp-install --with-mpc=/buildbot/tmp/build/toolchain/temp-install --with-cloog=/buildbot/tmp/build/toolchain/temp-install --with-isl=/buildbot/tmp/build/toolchain/temp-install --with-ppl=/buildbot/tmp/build/toolchain/temp-install --disable-ppl-version-check --disable-cloog-version-check --disable-isl-version-check --enable-cloog-backend=isl --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --enable-bionic-libs --enable-libatomic-ifuncs=no --enable-initfini-array --disable-nls --prefix=/tmp/59719db9ae19ff43aef46bbcb79596b6 --with-sysroot=/tmp/59719db9ae19ff43aef46bbcb79596b6/sysroot --with-binutils-version=2.25 --with-mpfr-version=3.1.1 --with-mpc-version=1.0.1 --with-gmp-version=5.0.5 --with-gcc-version=4.9 --with-gdb-version=none --with-gxx-include-dir=/tmp/59719db9ae19ff43aef46bbcb79596b6/include/c++/4.9.x --with-bugurl=http://source.android.com/source/report-bugs.html --enable-languages=c,c++ --disable-bootstrap --enable-plugins --enable-libgomp --enable-gnu-indirect-function --disable-libsanitizer --enable-gold --enable-threads --enable-eh-frame-hdr-for-static --enable-graphite=yes --with-isl-version=0.11.1 --with-cloog-version=0.18.0 --with-arch=armv5te --program-transform-name='s&^&arm-linux-androideabi-&' --enable-gold=default
+Thread model: posix
+gcc version 4.9.x 20150123 (prerelease) (GCC) 
+COMPILER_PATH=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/
+LIBRARY_PATH=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/:/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_186c7' '-L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib' '-L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu'
+ /home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2PN9gw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -o cmTC_186c7 /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -rpath-link /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc CMakeFiles/cmTC_186c7.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtend_android.o
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-linux-androideabi-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_186c7/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_186c7.dir/build.make CMakeFiles/cmTC_186c7.dir/build]
+  ignore line: [make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_186c7.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include   -o CMakeFiles/cmTC_186c7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_186c7]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_186c7.dir/link.txt --verbose=1]
+  ignore line: [/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm    /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc -v CMakeFiles/cmTC_186c7.dir/CMakeCCompilerABI.c.o  -o cmTC_186c7  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper]
+  ignore line: [Target: arm-linux-androideabi]
+  ignore line: [Configured with: /usr/local/google/buildbot/src/android/gcc/toolchain/build/../gcc/gcc-4.9/configure --prefix=/tmp/59719db9ae19ff43aef46bbcb79596b6 --target=arm-linux-androideabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/buildbot/tmp/build/toolchain/temp-install --with-mpfr=/buildbot/tmp/build/toolchain/temp-install --with-mpc=/buildbot/tmp/build/toolchain/temp-install --with-cloog=/buildbot/tmp/build/toolchain/temp-install --with-isl=/buildbot/tmp/build/toolchain/temp-install --with-ppl=/buildbot/tmp/build/toolchain/temp-install --disable-ppl-version-check --disable-cloog-version-check --disable-isl-version-check --enable-cloog-backend=isl --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --enable-bionic-libs --enable-libatomic-ifuncs=no --enable-initfini-array --disable-nls --prefix=/tmp/59719db9ae19ff43aef46bbcb79596b6 --with-sysroot=/tmp/59719db9ae19ff43aef46bbcb79596b6/sysroot --with-binutils-version=2.25 --with-mpfr-version=3.1.1 --with-mpc-version=1.0.1 --with-gmp-version=5.0.5 --with-gcc-version=4.9 --with-gdb-version=none --with-gxx-include-dir=/tmp/59719db9ae19ff43aef46bbcb79596b6/include/c++/4.9.x --with-bugurl=http://source.android.com/source/report-bugs.html --enable-languages=c,c++ --disable-bootstrap --enable-plugins --enable-libgomp --enable-gnu-indirect-function --disable-libsanitizer --enable-gold --enable-threads --enable-eh-frame-hdr-for-static --enable-graphite=yes --with-isl-version=0.11.1 --with-cloog-version=0.18.0 --with-arch=armv5te --program-transform-name='s&^&arm-linux-androideabi-&' --enable-gold=default]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.x 20150123 (prerelease) (GCC) ]
+  ignore line: [COMPILER_PATH=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/]
+  ignore line: [LIBRARY_PATH=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/:/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_186c7' '-L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib' '-L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu']
+  link line: [ /home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2PN9gw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -o cmTC_186c7 /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -rpath-link /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc CMakeFiles/cmTC_186c7.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtend_android.o]
+    arg [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc2PN9gw.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-ldl] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_186c7] ==> ignore
+    arg [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtbegin_dynamic.o] ==> ignore
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib] ==> dir [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a] ==> dir [/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x] ==> dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc] ==> dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib] ==> dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib] ==> dir [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib]
+    arg [/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so] ==> ignore
+    arg [-rpath-link] ==> ignore
+    arg [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib] ==> ignore
+    arg [-llog] ==> lib [log]
+    arg [-lz] ==> lib [z]
+    arg [-lm] ==> lib [m]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [CMakeFiles/cmTC_186c7.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-ldl] ==> lib [dl]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtend_android.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc]
+  remove lib [gcc]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib] ==> [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a] ==> [/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x] ==> [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc] ==> [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib] ==> [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/arm-linux-androideabi/lib]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib] ==> [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib]
+  implicit libs: [log;z;m;dl;c;c;dl]
+  implicit dirs: [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib;/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a;/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x;/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc;/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/arm-linux-androideabi/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ed7e1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ed7e1.dir/build.make CMakeFiles/cmTC_ed7e1.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed7e1.dir/feature_tests.c.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include  -std=c11 -o CMakeFiles/cmTC_ed7e1.dir/feature_tests.c.o   -c /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ed7e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed7e1.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm    /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc  CMakeFiles/cmTC_ed7e1.dir/feature_tests.c.o  -o cmTC_ed7e1  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a  
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_76a1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_76a1f.dir/build.make CMakeFiles/cmTC_76a1f.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76a1f.dir/feature_tests.c.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include  -std=c99 -o CMakeFiles/cmTC_76a1f.dir/feature_tests.c.o   -c /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_76a1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76a1f.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm    /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc  CMakeFiles/cmTC_76a1f.dir/feature_tests.c.o  -o cmTC_76a1f  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a  
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8cd2b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8cd2b.dir/build.make CMakeFiles/cmTC_8cd2b.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8cd2b.dir/feature_tests.c.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include  -std=c90 -o CMakeFiles/cmTC_8cd2b.dir/feature_tests.c.o   -c /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8cd2b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cd2b.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm    /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc  CMakeFiles/cmTC_8cd2b.dir/feature_tests.c.o  -o cmTC_8cd2b  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a  
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cb93c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cb93c.dir/build.make CMakeFiles/cmTC_cb93c.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cb93c.dir/testCXXCompiler.cxx.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm  -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include   -o CMakeFiles/cmTC_cb93c.dir/testCXXCompiler.cxx.o -c /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_cb93c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb93c.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -fPIC /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc  -shared  -o cmTC_cb93c CMakeFiles/cmTC_cb93c.dir/testCXXCompiler.cxx.o  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a  
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5b55c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5b55c.dir/build.make CMakeFiles/cmTC_5b55c.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5b55c.dir/CMakeCXXCompilerABI.cpp.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm  -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include   -o CMakeFiles/cmTC_5b55c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_5b55c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b55c.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -fPIC /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc -v -shared  -o cmTC_5b55c CMakeFiles/cmTC_5b55c.dir/CMakeCXXCompilerABI.cpp.o  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a   
+Using built-in specs.
+COLLECT_GCC=/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++
+COLLECT_LTO_WRAPPER=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper
+Target: arm-linux-androideabi
+Configured with: /usr/local/google/buildbot/src/android/gcc/toolchain/build/../gcc/gcc-4.9/configure --prefix=/tmp/59719db9ae19ff43aef46bbcb79596b6 --target=arm-linux-androideabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/buildbot/tmp/build/toolchain/temp-install --with-mpfr=/buildbot/tmp/build/toolchain/temp-install --with-mpc=/buildbot/tmp/build/toolchain/temp-install --with-cloog=/buildbot/tmp/build/toolchain/temp-install --with-isl=/buildbot/tmp/build/toolchain/temp-install --with-ppl=/buildbot/tmp/build/toolchain/temp-install --disable-ppl-version-check --disable-cloog-version-check --disable-isl-version-check --enable-cloog-backend=isl --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --enable-bionic-libs --enable-libatomic-ifuncs=no --enable-initfini-array --disable-nls --prefix=/tmp/59719db9ae19ff43aef46bbcb79596b6 --with-sysroot=/tmp/59719db9ae19ff43aef46bbcb79596b6/sysroot --with-binutils-version=2.25 --with-mpfr-version=3.1.1 --with-mpc-version=1.0.1 --with-gmp-version=5.0.5 --with-gcc-version=4.9 --with-gdb-version=none --with-gxx-include-dir=/tmp/59719db9ae19ff43aef46bbcb79596b6/include/c++/4.9.x --with-bugurl=http://source.android.com/source/report-bugs.html --enable-languages=c,c++ --disable-bootstrap --enable-plugins --enable-libgomp --enable-gnu-indirect-function --disable-libsanitizer --enable-gold --enable-threads --enable-eh-frame-hdr-for-static --enable-graphite=yes --with-isl-version=0.11.1 --with-cloog-version=0.18.0 --with-arch=armv5te --program-transform-name='s&^&arm-linux-androideabi-&' --enable-gold=default
+Thread model: posix
+gcc version 4.9.x 20150123 (prerelease) (GCC) 
+COMPILER_PATH=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/
+LIBRARY_PATH=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/:/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/
+COLLECT_GCC_OPTIONS='-fPIC' '-v' '-shared' '-o' 'cmTC_5b55c' '-L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib' '-L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu'
+ /home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccw0KZmP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm --eh-frame-hdr -shared -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -Bsymbolic -z noexecstack -z relro -z now -o cmTC_5b55c /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtbegin_so.o -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -rpath-link /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -ldl -lgcc CMakeFiles/cmTC_5b55c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lc -lgcc -lc -ldl -lgcc /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtend_so.o
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-linux-androideabi-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_5b55c/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_5b55c.dir/build.make CMakeFiles/cmTC_5b55c.dir/build]
+  ignore line: [make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_5b55c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm  -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include   -o CMakeFiles/cmTC_5b55c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_5b55c]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b55c.dir/link.txt --verbose=1]
+  ignore line: [/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -fPIC /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc -v -shared  -o cmTC_5b55c CMakeFiles/cmTC_5b55c.dir/CMakeCXXCompilerABI.cpp.o  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper]
+  ignore line: [Target: arm-linux-androideabi]
+  ignore line: [Configured with: /usr/local/google/buildbot/src/android/gcc/toolchain/build/../gcc/gcc-4.9/configure --prefix=/tmp/59719db9ae19ff43aef46bbcb79596b6 --target=arm-linux-androideabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/buildbot/tmp/build/toolchain/temp-install --with-mpfr=/buildbot/tmp/build/toolchain/temp-install --with-mpc=/buildbot/tmp/build/toolchain/temp-install --with-cloog=/buildbot/tmp/build/toolchain/temp-install --with-isl=/buildbot/tmp/build/toolchain/temp-install --with-ppl=/buildbot/tmp/build/toolchain/temp-install --disable-ppl-version-check --disable-cloog-version-check --disable-isl-version-check --enable-cloog-backend=isl --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --enable-bionic-libs --enable-libatomic-ifuncs=no --enable-initfini-array --disable-nls --prefix=/tmp/59719db9ae19ff43aef46bbcb79596b6 --with-sysroot=/tmp/59719db9ae19ff43aef46bbcb79596b6/sysroot --with-binutils-version=2.25 --with-mpfr-version=3.1.1 --with-mpc-version=1.0.1 --with-gmp-version=5.0.5 --with-gcc-version=4.9 --with-gdb-version=none --with-gxx-include-dir=/tmp/59719db9ae19ff43aef46bbcb79596b6/include/c++/4.9.x --with-bugurl=http://source.android.com/source/report-bugs.html --enable-languages=c,c++ --disable-bootstrap --enable-plugins --enable-libgomp --enable-gnu-indirect-function --disable-libsanitizer --enable-gold --enable-threads --enable-eh-frame-hdr-for-static --enable-graphite=yes --with-isl-version=0.11.1 --with-cloog-version=0.18.0 --with-arch=armv5te --program-transform-name='s&^&arm-linux-androideabi-&' --enable-gold=default]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.x 20150123 (prerelease) (GCC) ]
+  ignore line: [COMPILER_PATH=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/]
+  ignore line: [LIBRARY_PATH=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/:/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-v' '-shared' '-o' 'cmTC_5b55c' '-L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib' '-L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu']
+  link line: [ /home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccw0KZmP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm --eh-frame-hdr -shared -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -Bsymbolic -z noexecstack -z relro -z now -o cmTC_5b55c /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtbegin_so.o -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -rpath-link /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -ldl -lgcc CMakeFiles/cmTC_5b55c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lc -lgcc -lc -ldl -lgcc /home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtend_so.o]
+    arg [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccw0KZmP.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-ldl] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-shared] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-Bsymbolic] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_5b55c] ==> ignore
+    arg [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtbegin_so.o] ==> ignore
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib] ==> dir [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a] ==> dir [/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x] ==> dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc] ==> dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib] ==> dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib]
+    arg [-L/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib] ==> dir [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib]
+    arg [/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so] ==> ignore
+    arg [-rpath-link] ==> ignore
+    arg [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib] ==> ignore
+    arg [-llog] ==> lib [log]
+    arg [-lz] ==> lib [z]
+    arg [-ldl] ==> lib [dl]
+    arg [-lgcc] ==> lib [gcc]
+    arg [CMakeFiles/cmTC_5b55c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-ldl] ==> lib [dl]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib/crtend_so.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc]
+  remove lib [gcc]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib] ==> [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a] ==> [/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x] ==> [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc] ==> [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib] ==> [/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/arm-linux-androideabi/lib]
+  collapse library dir [/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib] ==> [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib]
+  implicit libs: [log;z;dl;stdc++;m;c;c;dl]
+  implicit dirs: [/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib;/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a;/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x;/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc;/home/jasem/Projects/android/android-ndk-r13/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/arm-linux-androideabi/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_481d1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_481d1.dir/build.make CMakeFiles/cmTC_481d1.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_481d1.dir/feature_tests.cxx.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm  -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include  -std=c++14 -o CMakeFiles/cmTC_481d1.dir/feature_tests.cxx.o -c /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_481d1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_481d1.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -fPIC /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc  -shared  -o cmTC_481d1 CMakeFiles/cmTC_481d1.dir/feature_tests.cxx.o  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a  
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b0657/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0657.dir/build.make CMakeFiles/cmTC_b0657.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b0657.dir/feature_tests.cxx.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm  -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include  -std=c++11 -o CMakeFiles/cmTC_b0657.dir/feature_tests.cxx.o -c /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b0657
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0657.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -fPIC /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc  -shared  -o cmTC_b0657 CMakeFiles/cmTC_b0657.dir/feature_tests.cxx.o  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a  
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5875a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5875a.dir/build.make CMakeFiles/cmTC_5875a.dir/build
+make[1]: Entering directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5875a.dir/feature_tests.cxx.o
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm  -DANDROID -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/include  -std=c++98 -o CMakeFiles/cmTC_5875a.dir/feature_tests.cxx.o -c /home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5875a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5875a.dir/link.txt --verbose=1
+/home/jasem/Projects/android/android-ndk-r13//toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++  --sysroot=/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm -fPIC /home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so -Wl,-rpath-link,/home/jasem/Projects/android/android-ndk-r13//platforms/android-15/arch-arm/usr/lib -llog -lz -lm -ldl -lc -lgcc  -shared  -o cmTC_5875a CMakeFiles/cmTC_5875a.dir/feature_tests.cxx.o  -L/home/jasem/Projects/android/android-ndk-r13/platforms/android-15/arch-arm/usr/lib  -L/home/jasem/Projects/android/android-ndk-r13/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a  
+make[1]: Leaving directory '/home/jasem/Projects/kstars/build_kstarslite/android_libs_src/libnova/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
