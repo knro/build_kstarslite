@@ -1,5 +1,18 @@
 #!/bin/bash
 . build-config #load values from config file
+get_script_dir () {
+     SOURCE="${BASH_SOURCE[0]}"
+     while [ -h "$SOURCE" ]; do
+          DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+          SOURCE="$( readlink "$SOURCE" )"
+          [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+     done
+     $( cd -P "$( dirname "$SOURCE" )" )
+     pwd
+}
+
+export SCRIPT_DIR="$(get_script_dir)"
+
 mkdir android_libs -p
 # Ask user what libraries should be downloaded/built
 if [ -z "$download_kf5" ]
@@ -118,6 +131,7 @@ export ANT="$ant"
 export JAVA_HOME="$java_home"
 export ANDROID_ARCHITECTURE="$android_architecture"
 export ANDROID_API_LEVEL="$android_api_level"
+export BUILD_KSTARSLITE_DIR="${SCRIPT_DIR}"
 
 if [ "$ANDROID_ARCHITECTURE" == "arm64" ]
 then
@@ -154,7 +168,7 @@ then
 	sed -E -i "s|build-dir.*|build-dir ${kf5_android_path}/kde/build/${android_architecture} |g" kdesrc-conf-android/kdesrc-buildrc
 	sed	-E -i "s|source-dir.*|source-dir ${kf5_android_path}/kde/src |g" kdesrc-conf-android/kdesrc-buildrc
 	sed -E -i "s|kdedir.*|kdedir ${kf5_android_path}/kde/install/${android_architecture} |g" kdesrc-conf-android/kdesrc-buildrc
-	sed -E -i "s|-DCMAKE_TOOLCHAIN_FILE=.*?\\ |-DCMAKE_TOOLCHAIN_FILE=${kstars_DIR}/build_kstarslite/android_libs_src/AndroidToolchain.cmake |g" kdesrc-conf-android/kdesrc-buildrc
+	sed -E -i "s|-DCMAKE_TOOLCHAIN_FILE=.*?\\ |-DCMAKE_TOOLCHAIN_FILE=${SCRIPT_DIR}/android_libs_src/AndroidToolchain.cmake |g" kdesrc-conf-android/kdesrc-buildrc
 
 	if [ -e $qt_android_libs ]
 	then
@@ -170,27 +184,27 @@ then
 fi
 
 #Create separate directory for all libraries built for this architecture
-mkdir "${kstars_DIR}/build_kstarslite/android_libs/${android_architecture}" -p
+mkdir "${SCRIPT_DIR}/android_libs/${android_architecture}" -p
 
 if [ "$build_cfitsio" = "Y" ] || [ "$build_cfitsio" = "y" ] || [ "$build_cfitsio" = "Yes" ] || [ "$build_cfitsio" = "yes" ]
 then
 	# Build CFITSIO
-	cd "${kstars_DIR}/build_kstarslite/android_libs_src/cfitsio"
+	cd "${SCRIPT_DIR}/android_libs_src/cfitsio"
 	make distclean
-	./build.sh "${kstars_DIR}/build_kstarslite/android_libs/${android_architecture}/"
-	mv libcfitsio.a "${kstars_DIR}/build_kstarslite/android_libs/${android_architecture}/"
+	./build.sh "${SCRIPT_DIR}/android_libs/${android_architecture}/"
+	mv libcfitsio.a "${SCRIPT_DIR}/android_libs/${android_architecture}/"
 	make distclean
 fi
 
 # Build libnova
 if [ "$build_nova" = "Y" ] || [ "$build_nova" = "y" ] || [ "$build_nova" = "Yes" ] || [ "$build_nova" = "yes" ]
 then
-	mkdir "${kstars_DIR}/build_kstarslite/android_libs_src/libnova/build" -p
-	cd "${kstars_DIR}/build_kstarslite/android_libs_src/libnova/build"
-	make clean
-	cmake ../ -DCMAKE_TOOLCHAIN_FILE="${kstars_DIR}/build_kstarslite/android_libs_src/AndroidToolchain.cmake" -DBUILD_SHARED_LIBRARY=OFF
+	rm -rf "${SCRIPT_DIR}/android_libs_src/libnova/build" 
+	mkdir "${SCRIPT_DIR}/android_libs_src/libnova/build" -p
+	cd "${SCRIPT_DIR}/android_libs_src/libnova/build"
+	cmake ../ -DCMAKE_TOOLCHAIN_FILE="${SCRIPT_DIR}/android_libs_src/AndroidToolchain.cmake" -DBUILD_SHARED_LIBRARY=OFF
 	make
-	mv lib/liblibnova.a "${kstars_DIR}/build_kstarslite/android_libs/${android_architecture}/"
+	mv lib/liblibnova.a "${SCRIPT_DIR}/android_libs/${android_architecture}/"
 	make clean
 fi
 
@@ -202,7 +216,7 @@ then
 		echo $PWD
 		git clone https://github.com/indilib/indi.git
 		# Update indi location in build-config file
-		sed -E -i "s|indi_location.*|indi_location=\"$download_indi_path\" # Set INDI source location (location of libindi with CMakeLists.txt in it)|g" ${kstars_DIR}/build_kstarslite/build-config
+		sed -E -i "s|indi_location.*|indi_location=\"$download_indi_path\" # Set INDI source location (location of libindi with CMakeLists.txt in it)|g" ${SCRIPT_DIR}/build-config
 		indi_location=$download_indi_path		
 fi
 
@@ -215,17 +229,17 @@ then
 	cd $indi_location/indi/build-android
 	rm CMakeCache.txt
 	make clean
-	cmake $indi_location/indi/libindi -DCMAKE_TOOLCHAIN_FILE="${kstars_DIR}/build_kstarslite/android_libs_src/AndroidToolchain.cmake" \
-		-DCFITSIO_LIBRARIES="${kstars_DIR}/build_kstarslite/android_libs/${android_architecture}/libcfitsio.a" \
-		-DCFITSIO_INCLUDE_DIR="${kstars_DIR}/build_kstarslite/include" \
-		-DNOVA_LIBRARIES="${kstars_DIR}/build_kstarslite/android_libs/${android_architecture}/liblibnova.a" \
+	cmake $indi_location/indi/libindi -DCMAKE_TOOLCHAIN_FILE="${SCRIPT_DIR}/android_libs_src/AndroidToolchain.cmake" \
+		-DCFITSIO_LIBRARIES="${SCRIPT_DIR}/android_libs/${android_architecture}/libcfitsio.a" \
+		-DCFITSIO_INCLUDE_DIR="${SCRIPT_DIR}/include" \
+		-DNOVA_LIBRARIES="${SCRIPT_DIR}/android_libs/${android_architecture}/liblibnova.a" \
 		-DCMAKE_PREFIX_PATH="${Qt5_android}"
 	make
-	mv libindi.a "${kstars_DIR}/build_kstarslite/android_libs/${android_architecture}/"
-	mv libindiclientqt.a "${kstars_DIR}/build_kstarslite/android_libs/${android_architecture}/"
+	mv libindi.a "${SCRIPT_DIR}/android_libs/${android_architecture}/"
+	mv libindiclientqt.a "${SCRIPT_DIR}/android_libs/${android_architecture}/"
 	rm CMakeCache.txt
 	make clean
-	cd "${kstars_DIR}/build_kstarslite/android_libs/${ANDROID_ARCHITECTURE}"
+	cd "${SCRIPT_DIR}/android_libs/${ANDROID_ARCHITECTURE}"
 	
 	# Combine libindi and liblibnova
 ar -M <<EOM
@@ -244,11 +258,11 @@ fi
 #Build LibRAW
 if [ "$build_libraw" = "Y" ] || [ "$build_libraw" = "y" ] || [ "$build_libraw" = "Yes" ] || [ "$build_libraw" = "yes" ]
 then
-	cd "${kstars_DIR}/build_kstarslite/android_libs_src/libraw/Android/jni/"
+	cd "${SCRIPT_DIR}/android_libs_src/libraw/Android/jni/"
 	sed -E -i "s|APP_PLATFORM.*|APP_PLATFORM := android-${ANDROID_API_LEVEL} |g" Application.mk
 	sed -E -i "s|APP_ABI.*|APP_ABI := ${ANDROID_ABI} |g" Application.mk
 	${ANDROID_NDK}/./ndk-build
-	mv ../libs/${ANDROID_ABI}/libRAWExtractor.so "${kstars_DIR}/build_kstarslite/android_libs/${android_architecture}/"
+	mv ../libs/${ANDROID_ABI}/libRAWExtractor.so "${SCRIPT_DIR}/android_libs/${android_architecture}/"
 	rm -rf ../libs/
 	rm -rf ../obj/
 fi
@@ -262,7 +276,8 @@ cd "${build_dir}/build"
 rm -rf "${build_dir}/export"
 mkdir "${build_dir}/export" -p
 
-cmake "${kstars_DIR}" -DCMAKE_TOOLCHAIN_FILE="${kstars_DIR}/build_kstarslite/android_libs_src/AndroidToolchain.cmake" \
+cmake "${kstars_DIR}" -DCMAKE_TOOLCHAIN_FILE="${SCRIPT_DIR}/android_libs_src/AndroidToolchain.cmake" \
+	-DBUILD_KSTARSLITE_DIR=${SCRIPT_DIR} \
 	-DANDROID_ARCHITECTURE=${ANDROID_ARCHITECTURE} \
 	-DCMAKE_BUILD_TYPE=Release \
 	-DCMAKE_PREFIX_PATH=${qt_android_libs} \
