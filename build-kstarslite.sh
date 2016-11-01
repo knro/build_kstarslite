@@ -225,10 +225,9 @@ if [ "$build_indi" = "Y" ] || [ "$build_indi" = "y" ] || [ "$build_indi" = "Yes"
 then
 	cd $indi_location/indi/
 	git pull
+	rm -rf $indi_location/indi/build-android
 	mkdir $indi_location/indi/build-android -p
 	cd $indi_location/indi/build-android
-	rm CMakeCache.txt
-	make clean
 	cmake $indi_location/indi/libindi -DCMAKE_TOOLCHAIN_FILE="${SCRIPT_DIR}/android_libs_src/AndroidToolchain.cmake" \
 		-DCFITSIO_LIBRARIES="${SCRIPT_DIR}/android_libs/${android_architecture}/libcfitsio.a" \
 		-DCFITSIO_INCLUDE_DIR="${SCRIPT_DIR}/include" \
@@ -269,14 +268,14 @@ fi
 
 #Build KStars Lite
 mkdir ${build_dir} -p
-rm "${build_dir}/build/CMakeCache.txt"
+rm -rf "${build_dir}/build"
 mkdir "${build_dir}/build" -p
 cd "${build_dir}/build"
 
 rm -rf "${build_dir}/export"
 mkdir "${build_dir}/export" -p
 
-cmake "${kstars_DIR}" -DCMAKE_TOOLCHAIN_FILE="${SCRIPT_DIR}/android_libs_src/AndroidToolchain.cmake" \
+ccmake "${kstars_DIR}" -DCMAKE_TOOLCHAIN_FILE="${SCRIPT_DIR}/android_libs_src/AndroidToolchain.cmake" \
 	-DBUILD_KSTARSLITE_DIR=${SCRIPT_DIR} \
 	-DANDROID_ARCHITECTURE=${ANDROID_ARCHITECTURE} \
 	-DCMAKE_BUILD_TYPE=Release \
