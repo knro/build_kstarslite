@@ -18,7 +18,7 @@ export PREFIX=/tmp/androidToolchainC
 #
 # N.B. This was developed on a Mac running Mac OSX 10.8.5 and Xcode 5.0.2. You may need
 # different variables on other systems. See STANDALONE-TOOLCHAIN.HTML
-$NDK_ROOT/build/tools/make-standalone-toolchain.sh --platform=android-${ANDROID_API_LEVEL} --install-dir=$PREFIX --toolchain=$ANDROID_TOOLCHAIN-clang
+$NDK_ROOT/build/tools/make-standalone-toolchain.sh --force --platform=android-${ANDROID_API_LEVEL} --install-dir=$PREFIX --toolchain=$ANDROID_TOOLCHAIN-clang
 export PATH="$PREFIX/bin:$PATH"
 # Using clang here. Gcc is an alternative, but there is currently an Android compiler bug # that prevents using gcc
 # https://code.google.com/p/android/issues/detail?id=59913 

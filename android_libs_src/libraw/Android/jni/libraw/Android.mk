@@ -7,9 +7,9 @@ LOCAL_MODULE := libraw
 #path to LibRAW source root:
 LIBRAW_PATH := $(LOCAL_PATH)/../../..
 
-LOCAL_CFLAGS := -DUSE_LCMS2 -DUSE_JPEG -w
+LOCAL_CFLAGS := -DUSE_LCMS2 -DUSE_JPEG
 
-LOCAL_CPPFLAGS := $(LOCAL_CFLAGS) -fexceptions
+LOCAL_CPPFLAGS := $(LOCAL_CFLAGS) -fexceptions 
 
 LOCAL_C_INCLUDES := $(LIBRAW_PATH)/internal $(LIBRAW_PATH)/libraw $(LIBRAW_PATH)/
 

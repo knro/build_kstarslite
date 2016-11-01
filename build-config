@@ -10,11 +10,11 @@ build_libraw=""
 
 kf5_android_path="/home/polaris/dev/KDE/test_kstarslite_building_script/KF5_Android/"
 
-qt_android_libs="/home/polaris/dev/Qt5.7.0/5.7/android_armv7/"
+qt_android_libs="/home/polaris/dev/Qt5.7.0/5.7/android_x86/"
 
-android_architecture="arm" # arm/arm64 or x86/x86_64 or mips/mips64
+android_architecture="x86" # arm/arm64 or x86/x86_64 or mips/mips64
 
-android_ndk="/home/polaris/dev/Android/android-ndk-r11c/" #"Your path to Android NDK folder"
+android_ndk="/home/polaris/dev/Android/android-ndk-r13b/" #"Your path to Android NDK folder"
 
 android_sdk_root="/home/polaris/dev/Android/android-sdk-linux/" #"Your path to Android SDK folder"
 
