@@ -1,39 +1,56 @@
 #!/bin/bash
 # Building options. Set libraries that has to be downloaded and/or built
-download_kf5=""
-build_kf5=""
-build_cfitsio=""
-build_nova=""
-download_indi=""
-build_indi=""
-build_libraw=""
 
+# Set to either yes or no. If you run the script initially and these packages were built on your system, then set them to 'no' on subsequent runs unless you want to build them again.
+download_kf5="yes"
+build_kf5="yes"
+build_cfitsio="yes"
+build_nova="yes"
+download_indi="yes"
+build_indi="yes"
+build_libraw="yes"
+
+# Where to store KDE KF5 Sources?
 kf5_android_path="/home/polaris/dev/KDE/test_kstarslite_building_script/KF5_Android/"
 
+# Where is Qt Android Libs?
 qt_android_libs="/home/polaris/dev/Qt5.7.0/5.7/android_armv7/"
 
-android_architecture="arm" # arm/arm64 or x86/x86_64 or mips/mips64
+# arm/arm64 or x86/x86_64 or mips/mips64
+android_architecture="arm" 
 
-android_ndk="/home/polaris/dev/Android/android-ndk-r11c/" #"Your path to Android NDK folder"
+#"Your path to Android NDK folder"
+android_ndk="/home/polaris/dev/Android/android-ndk-r11c/" 
 
-android_sdk_root="/home/polaris/dev/Android/android-sdk-linux/" #"Your path to Android SDK folder"
+#"Your path to Android SDK folder"
+android_sdk_root="/home/polaris/dev/Android/android-sdk-linux/" 
 
+# Android API Level
 android_api_level="15"
  
-ant= "usr/bin/ant" #"path to your ant installation (/usr/bin/ant on Ubuntu)"
+#"path to your ant installation (/usr/bin/ant on Ubuntu)"
+ant= "/usr/bin/ant" 
 
-java_home="/usr/lib/jvm/java-8-openjdk-amd64/" #"path to your JDK (choose from the folders at /usr/lib/jvm/ on Ubuntu)"
+#"path to your JDK (choose from the folders at /usr/lib/jvm/ on Ubuntu)"
+java_home="/usr/lib/jvm/java-8-openjdk-amd64/" 
 
-kstars_DIR="/home/polaris/dev/KDE/kstars/" #"KStars source directory"
+#"KStars source directory"
+kstars_DIR="/home/polaris/dev/KDE/kstars/"
 
-build_dir="/home/polaris/dev/KDE/kstars-build/Android/Release/${android_architecture}" #"Your building directory (build and export directories will be created there)"
+#"Your building directory (build and export directories will be created there)"
+build_dir="/home/polaris/dev/KDE/kstars-build/Android/Release/${android_architecture}" 
 
-kf5_host_tooling="/usr/lib/x86_64-linux-gnu/cmake/" #"Path to KF5Config cmake files e.g. /usr/lib/x86_64-linux-gnu/cmake/"
+#"Path to KF5Config cmake files e.g. /usr/lib/x86_64-linux-gnu/cmake/"
+kf5_host_tooling="/usr/lib/x86_64-linux-gnu/cmake/" 
 
-indi_location="/home/polaris/dev/KDE/test_kstarslite_building_script/indi_test" # Set INDI source location (location of libindi with CMakeLists.txt in it)
+# Set INDI source location (location of indi with libindi/debian/3rdparty directories under it)
+indi_location="/home/polaris/dev/KDE/test_kstarslite_building_script/indi_test" 
 
+# Where is your keystore location to sign the package?
 keystore_path="${build_dir}/build/kstars_build_apk/bin/KeyStore.jks"
 
+# Keystore name
 keystore_name="KeyStore.jks"
 
+# Keystore alias
 keystore_alias="key"
