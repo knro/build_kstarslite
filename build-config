@@ -2,31 +2,34 @@
 # Building options. Set libraries that has to be downloaded and/or built
 
 # Set to either yes or no. If you run the script initially and these packages were built on your system, then set them to 'no' on subsequent runs unless you want to build them again.
-download_kf5="yes"
-build_kf5="yes"
-build_cfitsio="yes"
-build_nova="yes"
-download_indi="yes"
-build_indi="yes"
-build_libraw="yes"
+download_kf5="no"
+build_kf5="no"
+build_cfitsio="no"
+build_nova="no"
+download_indi="no"
+build_indi="no"
+build_libraw="no"
 
 # Where to store KDE KF5 Sources?
-kf5_android_path="/home/polaris/dev/KDE/test_kstarslite_building_script/KF5_Android/"
+kf5_android_path="/home/jasem/Projects/development/KDE/KF5_Android/"
 
 # Where is Qt Android Libs?
-qt_android_libs="/home/polaris/dev/Qt5.7.0/5.7/android_armv7/"
+qt_android_libs="/opt/Qt5.7.0/5.7/android_armv7/"
 
 # arm/arm64 or x86/x86_64 or mips/mips64
 android_architecture="arm" 
 
 #"Your path to Android NDK folder"
-android_ndk="/home/polaris/dev/Android/android-ndk-r11c/" 
+android_ndk="/home/jasem/Projects/android/android-ndk-r13" 
 
 #"Your path to Android SDK folder"
-android_sdk_root="/home/polaris/dev/Android/android-sdk-linux/" 
+android_sdk_root="/home/jasem/Projects/android/android-sdk-linux" 
 
 # Android API Level
 android_api_level="15"
+
+# Build type (Debug or Release)
+release_type="Debug"
  
 #"path to your ant installation (/usr/bin/ant on Ubuntu)"
 ant= "/usr/bin/ant" 
@@ -35,16 +38,16 @@ ant= "/usr/bin/ant"
 java_home="/usr/lib/jvm/java-8-openjdk-amd64/" 
 
 #"KStars source directory"
-kstars_DIR="/home/polaris/dev/KDE/kstars/"
+kstars_DIR="/home/jasem/Projects/lite_kstars/"
 
 #"Your building directory (build and export directories will be created there)"
-build_dir="/home/polaris/dev/KDE/kstars-build/Android/Release/${android_architecture}" 
+build_dir="/home/jasem/Projects/build/android_kstars/${release_type}/${android_architecture}" 
 
 #"Path to KF5Config cmake files e.g. /usr/lib/x86_64-linux-gnu/cmake/"
 kf5_host_tooling="/usr/lib/x86_64-linux-gnu/cmake/" 
 
-# Set INDI source location (location of indi with libindi/debian/3rdparty directories under it)
-indi_location="/home/polaris/dev/KDE/test_kstarslite_building_script/indi_test" 
+# Set INDI source location (parent directory of indi)
+indi_location="/home/jasem/Projects" 
 
 # Where is your keystore location to sign the package?
 keystore_path="${build_dir}/build/kstars_build_apk/bin/KeyStore.jks"

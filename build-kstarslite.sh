@@ -132,6 +132,7 @@ export JAVA_HOME="$java_home"
 export ANDROID_ARCHITECTURE="$android_architecture"
 export ANDROID_API_LEVEL="$android_api_level"
 export BUILD_KSTARSLITE_DIR="${SCRIPT_DIR}"
+export RELEASE_TYPE="${release_type}"
 
 if [ "$ANDROID_ARCHITECTURE" == "arm64" ]
 then
@@ -275,10 +276,19 @@ cd "${build_dir}/build"
 rm -rf "${build_dir}/export"
 mkdir "${build_dir}/export" -p
 
+release_file="no_file"
+
+if [ "$release_type" = "Release" ]
+then
+    release_file="QtApp-release-unsigned.apk"
+else
+    release_file="QtApp-debug.apk"
+fi
+
 cmake "${kstars_DIR}" -DCMAKE_TOOLCHAIN_FILE="${SCRIPT_DIR}/android_libs_src/AndroidToolchain.cmake" \
 	-DBUILD_KSTARSLITE_DIR=${SCRIPT_DIR} \
 	-DANDROID_ARCHITECTURE=${ANDROID_ARCHITECTURE} \
-	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_BUILD_TYPE=${release_type} \
 	-DCMAKE_PREFIX_PATH=${qt_android_libs} \
 	-DCMAKE_INSTALL_PREFIX="${build_dir}/export" \
 	-DQTANDROID_EXPORTED_TARGET=kstars \
@@ -291,29 +301,35 @@ cmake "${kstars_DIR}" -DCMAKE_TOOLCHAIN_FILE="${SCRIPT_DIR}/android_libs_src/And
 
 make install
 make create-apk-kstars
-echo "If you want to install KStars Lite to your Android device, connect it to your PC (only one Android device at a time) and enter Y/Yes. 
-Otherwise the APK file is ${build_dir}/build/kstars_build_apk/bin/QtApp-debug.apk"
-read user_response
-if [ "$user_response" = "Y" ] || [ "$user_response" = "y" ] || [ "$user_response" = "Yes" ] || [ "$user_response" = "yes" ]
+
+if [ "$release_type" = "Release" ]
 then
-	adb install -r kstars_build_apk/bin/QtApp-release-unsigned.apk	
+    echo "Would you like to sign apk?"
+    read user_response
+    if [ "$user_response" = "Y" ] || [ "$user_response" = "y" ] || [ "$user_response" = "Yes" ] || [ "$user_response" = "yes" ]
+        then
+            echo "Do you need to create a keystore (yes/no)?"
+            read user_response
+            if [ "$user_response" = "Y" ] || [ "$user_response" = "y" ] || [ "$user_response" = "Yes" ] || [ "$user_response" = "yes" ]
+                then
+                    keytool -genkey -alias ${keystore_alias} -keyalg RSA -keystore ${keystore_path} -keysize 2048
+            fi
+
+        read -s -p "Enter password for keystore: " keystore_password
+
+        jarsigner -keystore ${keystore_path} -storepass "$keystore_password" ${build_dir}/build/kstars_build_apk/bin/${release_file} ${keystore_alias}
+        rm ${build_dir}/build/kstars_build_apk/bin/kstars-signed.apk
+        zipalign -v 4 ${build_dir}/build/kstars_build_apk/bin/${release_file}  ${build_dir}/build/kstars_build_apk/bin/kstars-signed.apk
+        release_file="kstars-signed.apk"
+    fi
 fi
 
-echo "Would you like to sign apk? (Needed for publishing in Google Play)"
+echo "Final APK file is ${build_dir}/build/kstars_build_apk/bin/${release_file}"
+
+echo "If you want to install KStars Lite to your Android device, connect it to your PC (only one Android device at a time) and enter Y/Yes."
 
 read user_response
 if [ "$user_response" = "Y" ] || [ "$user_response" = "y" ] || [ "$user_response" = "Yes" ] || [ "$user_response" = "yes" ]
 then
-	echo "Do you need to create a keystore (yes/no)?"
-	read user_response
-	if [ "$user_response" = "Y" ] || [ "$user_response" = "y" ] || [ "$user_response" = "Yes" ] || [ "$user_response" = "yes" ]
-	then
-		keytool -genkey -alias ${keystore_alias} -keyalg RSA -keystore ${keystore_path} -keysize 2048
-	fi
-
-read -s -p "Enter password for keystore: " keystore_password
-
-jarsigner -keystore ${keystore_path} -storepass "$keystore_password" ${build_dir}/build/kstars_build_apk/bin/QtApp-release-unsigned.apk ${keystore_alias}
-rm ${build_dir}/build/kstars_build_apk/bin/kstars-signed.apk
-zipalign 4 ${build_dir}/build/kstars_build_apk/bin/QtApp-release-unsigned.apk  ${build_dir}/build/kstars_build_apk/bin/kstars-signed.apk
+	adb install -r kstars_build_apk/bin/${release_file}
 fi
